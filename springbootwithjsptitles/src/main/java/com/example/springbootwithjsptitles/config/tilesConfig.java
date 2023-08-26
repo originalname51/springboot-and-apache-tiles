@@ -1,15 +1,19 @@
 package com.example.springbootwithjsptitles.config;
 
+import com.example.springbootwithjsptitles.movedClasses.TilesConfigurer;
+import com.example.springbootwithjsptitles.movedClasses.TilesView;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
-import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
-import org.springframework.web.servlet.view.tiles3.TilesView;
-import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
+// import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
+// import org.springframework.web.servlet.view.tiles3.TilesView;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
+import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
+import org.thymeleaf.templateresolver.AbstractTemplateResolver;
 
 @Configuration
 @EnableWebMvc
@@ -27,11 +31,11 @@ public class tilesConfig {
     }
 
     @Bean
-    public ServletContextTemplateResolver templateResolver(ServletContext servletContext) {
-        var resolver = new ServletContextTemplateResolver(servletContext);
+    public SpringResourceTemplateResolver templateResolver(ApplicationContext applicationContext) {
+        var resolver = new SpringResourceTemplateResolver();
+        resolver.setApplicationContext(applicationContext);
         resolver.setPrefix("WEB-INF/views/_");
         resolver.setSuffix(".jsp");
-        resolver.setCacheable(false);
         return resolver;
     }
 

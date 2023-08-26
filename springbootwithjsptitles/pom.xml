@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.5</version>
+		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -18,6 +18,8 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+<!--		<tomcat.version>10.0.0</tomcat.version>-->
+		<jakarta-servlet-jsp-jstl.version>3.0.0</jakarta-servlet-jsp-jstl.version>
 	</properties>
 	<dependencies>
 
@@ -40,19 +42,25 @@
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
+<!--			<version>10.0.0</version>-->
 		</dependency>
 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
+
 
 		<!-- Tiles API -->
 		<!-- http://mvnrepository.com/artifact/org.apache.tiles/tiles-api -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-api</artifactId>
-			<version>3.0.8</version>
+			<version>3.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-extras</artifactId>
+			<version>3.1-SNAPSHOT</version>
+			<type>jar</type>
 		</dependency>
 
 
@@ -61,7 +69,7 @@
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-core</artifactId>
-			<version>3.0.8</version>
+			<version>3.1-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Tiles Servlet -->
@@ -69,7 +77,7 @@
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-servlet</artifactId>
-			<version>3.0.8</version>
+			<version>3.1-SNAPSHOT</version>
 		</dependency>
 
 		<!-- Tiles JSP -->
@@ -77,14 +85,19 @@
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-jsp</artifactId>
-			<version>3.0.8</version>
+			<version>3.1-SNAPSHOT</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-request-api -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-request-api</artifactId>
-			<version>1.0.7</version>
+			<version>1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-request-servlet</artifactId>
+			<version>1.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
