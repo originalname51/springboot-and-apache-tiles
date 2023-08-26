@@ -10,8 +10,11 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>springbootwithjsptitles</artifactId>
+	<packaging>war</packaging>
+
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
+
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -86,12 +89,13 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
 
 
 	</build>

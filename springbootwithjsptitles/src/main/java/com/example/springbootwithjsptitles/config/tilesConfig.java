@@ -7,6 +7,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
 import org.springframework.web.servlet.view.tiles3.TilesView;
+import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
+
+import javax.servlet.ServletContext;
 
 @Configuration
 @EnableWebMvc
@@ -18,9 +21,18 @@ public class tilesConfig {
 
         // TilesView 3
         viewResolver.setViewClass(TilesView.class);
-        viewResolver.setPrefix("/webapp/WEB-INF/views");
-        viewResolver.setSuffix(".jsp");
+    //    viewResolver.setPrefix("/WEB-INF/views");
+    //    viewResolver.setSuffix(".jsp");
         return viewResolver;
+    }
+
+    @Bean
+    public ServletContextTemplateResolver templateResolver(ServletContext servletContext) {
+        var resolver = new ServletContextTemplateResolver(servletContext);
+        resolver.setPrefix("WEB-INF/views/_");
+        resolver.setSuffix(".jsp");
+        resolver.setCacheable(false);
+        return resolver;
     }
 
     @Bean(name = "tilesConfigurer")
