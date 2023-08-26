@@ -25,7 +25,7 @@ public class WebController {
     @GetMapping(value = {"/home"})
     public String homePage(Model model) {
 
-        return "home";
+        return "homePage";
     }
 
     @GetMapping("/listEmployee")
