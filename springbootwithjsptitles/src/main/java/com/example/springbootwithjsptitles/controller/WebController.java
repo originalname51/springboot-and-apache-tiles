@@ -31,7 +31,7 @@ public class WebController {
     @GetMapping("/listEmployee")
     public String listEmployee(Model model) {
 
-        model.addAttribute(employees);
+        model.addAttribute("employees",employees);
         return "listEmployee";
     }
 
