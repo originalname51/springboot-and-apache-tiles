@@ -13,6 +13,10 @@ package com.example.springbootwithjsptitles.movedClasses;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ *  *
+ *
+ *  THIS CODE WAS MODIFIED.
  */
 
 
@@ -69,7 +73,6 @@ import org.springframework.lang.Nullable;
 import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.context.ServletContextAware;
-//import org.springframework.web.servlet.view.tiles3.*;
 
 /**
  * Helper class to configure Tiles 3.x for the Spring Framework. See

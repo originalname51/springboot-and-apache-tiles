@@ -11,23 +11,18 @@
 	<groupId>com.example</groupId>
 	<artifactId>springbootwithjsptitles</artifactId>
 	<packaging>war</packaging>
-
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
-
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-<!--		<tomcat.version>10.0.0</tomcat.version>-->
 		<jakarta-servlet-jsp-jstl.version>3.0.0</jakarta-servlet-jsp-jstl.version>
 	</properties>
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -37,18 +32,7 @@
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
-<!--			<version>10.0.0</version>-->
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
-
-		<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
-<!--		<dependency>-->
-<!--			<groupId>jakarta.servlet.jsp.jstl</groupId>-->
-<!--			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>-->
-<!--			<version>3.0.0</version>-->
-<!--		</dependency>-->
-		<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp/jakarta.servlet.jsp-api -->
 		<dependency>
 			<groupId>jakarta.servlet.jsp</groupId>
 			<artifactId>jakarta.servlet.jsp-api</artifactId>
@@ -59,24 +43,10 @@
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>taglibs</groupId>-->
-<!--			<artifactId>standard</artifactId>-->
-<!--			<version>1.1.2</version>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>jakarta.servlet.jsp</groupId>-->
-<!--			<artifactId>jakarta.servlet.jstl</artifactId>-->
-<!--			<version>3.1.1</version>-->
-<!--&lt;!&ndash;			<scope>provided</scope>&ndash;&gt;-->
-<!--		</dependency>-->
-		<!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
 		<dependency>
 			<groupId>jakarta.servlet.jsp.jstl</groupId>
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 		</dependency>
-		<!-- Tiles API -->
-		<!-- http://mvnrepository.com/artifact/org.apache.tiles/tiles-api -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-api</artifactId>
@@ -88,33 +58,21 @@
 			<version>3.1-SNAPSHOT</version>
 			<type>jar</type>
 		</dependency>
-
-
-		<!-- Tiles Core -->
-		<!-- http://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-core</artifactId>
 			<version>3.1-SNAPSHOT</version>
 		</dependency>
-
-		<!-- Tiles Servlet -->
-		<!-- http://mvnrepository.com/artifact/org.apache.tiles/tiles-servlet -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-servlet</artifactId>
 			<version>3.1-SNAPSHOT</version>
 		</dependency>
-
-		<!-- Tiles JSP -->
-		<!-- http://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-jsp</artifactId>
 			<version>3.1-SNAPSHOT</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-request-api -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-request-api</artifactId>
@@ -126,17 +84,4 @@
 			<version>1.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-
-<!--		<plugins>-->
-<!--			<plugin>-->
-<!--				<groupId>org.springframework.boot</groupId>-->
-<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--			</plugin>-->
-<!--		</plugins>-->
-
-
-	</build>
-
 </project>

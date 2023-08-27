@@ -14,6 +14,10 @@ package com.example.springbootwithjsptitles.movedClasses;
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ *  *
+ *
+ *  THIS CODE WAS MODIFIED.
  */
 
 import java.util.Locale;
@@ -42,7 +46,6 @@ import org.springframework.web.servlet.support.JstlUtils;
 import org.springframework.web.servlet.support.RequestContext;
 import org.springframework.web.servlet.support.RequestContextUtils;
 import org.springframework.web.servlet.view.AbstractUrlBasedView;
-//import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 /**
  * {@link org.springframework.web.servlet.View} implementation that renders
